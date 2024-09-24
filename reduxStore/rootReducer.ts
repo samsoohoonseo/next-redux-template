@@ -15,7 +15,7 @@ const resetState = createAction('resetState')
 const combinedReducer = combineReducers({
     auth: authReducer,
     // user: userReducer,
-    [lunaApi.reducerPath]: lunaApi.reducer,
+    [projectApi.reducerPath]: projectApi.reducer,
 })
 
 export const rootReducer = (

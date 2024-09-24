@@ -8,7 +8,7 @@ import { baseQuery } from './baseApi'
 // define all tag types here
 export const PROJECT_API_ALL_TAGS = ['Users']
 
-export const lunaApi = createApi({
+export const projectApi = createApi({
     reducerPath: 'projectApi',
     baseQuery: baseQuery,
     tagTypes: PROJECT_API_ALL_TAGS,

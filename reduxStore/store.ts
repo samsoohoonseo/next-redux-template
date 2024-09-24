@@ -14,13 +14,13 @@ import {
 /* Instruments */
 import { rootReducer } from './rootReducer'
 import { middleware } from './middleware'
-import { lunaApi } from './api/lunaApi'
+import { projectApi } from './api/projectApi'
 
 export const storeAttributes: ConfigureStoreOptions = {
     reducer: rootReducer,
     middleware: (getDefaultMiddleware) => {
         return getDefaultMiddleware()
-            .concat(lunaApi.middleware)
+            .concat(projectApi.middleware)
             .concat(middleware)
     },
 }
